@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Home - Personal Budget Tracking</title>
 <link rel="stylesheet" href="styles/home.css" type="text/css"></link>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,400" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -16,16 +17,23 @@
 	<td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td>
 </tr>
 </table>
-<form id="totalCash" action="#">
-<table cellspacing="5" align="center">
-<tr><td>Name: </td><td></td><td> <input type="text"/></td></tr>
-<tr><td>Total Available Cash: </td><td></td><td><input id="totalCash" type="text"  /></td></tr>
-<tr><td>Email:</td> <td></td> <td><input id="email" type="text"/></td></tr>
-<tr><td><input type="submit" value="Submit"/></td><td></td><td> <input type="reset" value="Reset"/></td></tr>
+<form id="accountSetup" action="AccountSetupServlet" method="post">
+
+<table align="center">
+<tr><td><h1>Account Setup</h1></td></tr>
+<tr><td>Name: </td><td> <input type="text"/>error</td></tr>
+<tr><td>Total Available Cash: </td><td><input id="totalCash" type="text"/>error</td> </tr>
+<tr><td>Email:</td> <td><input id="email" type="text"/>error</td></tr>
+</table>
+
+<table align="center">
+<tr></br><td><input type="submit" value="Submit"/></td><td> <input type="reset" value="Reset"/></td></tr>
 </table>
 </form>
 
-<div id="dataBox" style="max-height:50%" align="center">Hello</div>
+
 
 </body>
+
+
 </html>

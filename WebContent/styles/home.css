@@ -3,4 +3,6 @@ body
 	background-image: url("../images/backgroundTexture.png");
 	background-position: center;
 	background-repeat: repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300 !important;
 }

@@ -5,28 +5,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Home - Personal Budget Tracking</title>
+<title>System - Personal Budget Tracking</title>
 <link rel="stylesheet" href="styles/home.css" type="text/css"></link>
-
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,400" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <table align="center">
-<tr>
-	<td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td>
-</tr>
+	<tr><td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td></tr>
+	<tr><td><a href="#">Go to T-Chart</a></td></tr>
 </table>
-<form id="totalCash" action="#">
-<table cellspacing="5" align="center">
-<tr><td>Name: </td><td></td><td><label id="usersName"></label></td></tr>
-<tr><td>Total Cash: </td><td></td><td><input id="totalCash" type="text"  /></td></tr>
-<tr><td><input type="radio" name="dORc" value="debit"/>Debit</td> <td></td> <td>Amount ($): &nbsp;<input id="amount" type="text" /></td></tr>
-<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td> <td></td> <td>Description: &nbsp;<input id="desc" type="text" /></td></tr>
-<tr><td><input type="submit" value="Submit" /></td><td></td><td> <input type="reset" value="Reset"/></td></tr>
+
+<form id="submitTransaction" action="SubmitTransactionServlet" method="post">
+
+<table align="center">
+	<tr><td><h1>Transaction</h1></td></tr>
+	<tr><td><b>Name: </b></td><td><label id="usersName">usersName</label></td></tr>
+	<tr><td><b>Total Cash: </b></td><td><label id="totalCash">totalCash</label></td></tr>
+	<tr><td></br></td></tr>
+	<tr><td><input type="radio" name="dORc" value="debit"/>Debit</td>  <td>Amount ($): &nbsp;<input id="amount" type="text" />error</td></tr>
+	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input id="desc" type="text" />error</td></tr>
+</table>
+
+<table align="center">
+	<tr></br><td><input type="submit" value="Submit"/></td><td><input type="reset" value="Reset"/></td></tr>
 </table>
 </form>
 
-<div id="dataBox" style="max-height:50%" align="center">Hello</div>
+<div id="dataBox" style="max-height:50%" align="center"></div>
 
 </body>
 </html>
