@@ -12,6 +12,11 @@ public class BudgetUser {
 		mtotalCash = totalCash;
 	}
 
+	public BudgetUser() {
+		mName = "";
+		mEmail = "";
+		mtotalCash = 0;
+	}
 	
 	public String getName() {
 		return mName;
