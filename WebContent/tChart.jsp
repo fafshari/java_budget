@@ -19,6 +19,17 @@
 	<tr><td><h1>T-Chart</h1></td></tr>
 </table>
 
+<table align="center">
+	<tr>
+		<td align="center" width="200px"><b><u><font size="5">Debit</font></u></b></td>
+		<td align="center" width="200px"><b><u><font size="5">Credit</font></u></b></td>
+		<td align="center" width="200px"><b><u><font size="5">Description</font></u></b></td>
+		<td align="center" width="200px"><b><u><font size="5">Date</font></u></b></td>
+	</tr>
+	
+	
+	
+</table>
 
 
 </body>
