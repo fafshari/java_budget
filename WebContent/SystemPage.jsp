@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Home - Personal Budget Tracking</title>
 <link rel="stylesheet" href="styles/home.css" type="text/css"></link>
-</head>
 
+</head>
 <body>
 
 <table align="center">
@@ -18,10 +18,11 @@
 </table>
 <form id="totalCash" action="#">
 <table cellspacing="5" align="center">
-<tr><td>Name: </td><td></td><td> <input type="text"/></td></tr>
-<tr><td>Total Available Cash: </td><td></td><td><input id="totalCash" type="text"  /></td></tr>
-<tr><td>Email:</td> <td></td> <td><input id="email" type="text"/></td></tr>
-<tr><td><input type="submit" value="Submit"/></td><td></td><td> <input type="reset" value="Reset"/></td></tr>
+<tr><td>Name: </td><td></td><td><label id="usersName"></label></td></tr>
+<tr><td>Total Cash: </td><td></td><td><input id="totalCash" type="text"  /></td></tr>
+<tr><td><input type="radio" name="dORc" value="debit"/>Debit</td> <td></td> <td>Amount ($): &nbsp;<input id="amount" type="text" /></td></tr>
+<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td> <td></td> <td>Description: &nbsp;<input id="desc" type="text" /></td></tr>
+<tr><td><input type="submit" value="Submit" /></td><td></td><td> <input type="reset" value="Reset"/></td></tr>
 </table>
 </form>
 
