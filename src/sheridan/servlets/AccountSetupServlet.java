@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import sheridan.BudgetUser;
+
 /**
  * Servlet implementation class AccountSetupServlet
  */
@@ -40,7 +42,7 @@ public class AccountSetupServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		BudgetUser user;
+		BudgetUser user = null;
 		HttpSession session = request.getSession();
 
 		String name = request.getParameter("name");
@@ -52,6 +54,7 @@ public class AccountSetupServlet extends HttpServlet {
 		try {
 			totalCash = Float.parseFloat(request.getParameter("totalCash"));
 			session.setAttribute("totalCashError", null);
+			user.setTotalCash(totalCash);
 		} catch (NumberFormatException e) {
 
 			session.setAttribute("totalCashError", "unit price is not a number");
