@@ -12,27 +12,27 @@ public class Transaction {
 		mDescription = description;
 	}
 
-	public float getmAmount() {
+	public float getAmount() {
 		return mAmount;
 	}
 
-	public boolean ismIsCredit() {
+	public boolean isIsCredit() {
 		return mIsCredit;
 	}
 
-	public String getmDescription() {
+	public String getDescription() {
 		return mDescription;
 	}
 
-	public void setmAmount(float mAmount) {
+	public void setAmount(float mAmount) {
 		this.mAmount = mAmount;
 	}
 
-	public void setmIsCredit(boolean mIsCredit) {
+	public void setIsCredit(boolean mIsCredit) {
 		this.mIsCredit = mIsCredit;
 	}
 
-	public void setmDescription(String mDescription) {
+	public void setDescription(String mDescription) {
 		this.mDescription = mDescription;
 	}
 	

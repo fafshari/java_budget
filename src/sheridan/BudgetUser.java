@@ -13,19 +13,19 @@ public class BudgetUser {
 	}
 
 	
-	public String getmName() {
+	public String getName() {
 		return mName;
 	}
-	public String getmEmail() {
+	public String getEmail() {
 		return mEmail;
 	}
 	public double getTotalCash() {
 		return mtotalCash;
 	}
-	public void setmName(String mName) {
+	public void setName(String mName) {
 		this.mName = mName;
 	}
-	public void setmEmail(String mEmail) {
+	public void setEmail(String mEmail) {
 		this.mEmail = mEmail;
 	}
 	public void setTotalCash(double totalCash) {
