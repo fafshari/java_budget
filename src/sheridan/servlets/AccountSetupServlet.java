@@ -42,7 +42,7 @@ public class AccountSetupServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		BudgetUser user = null;
+		BudgetUser user = new BudgetUser();
 		HttpSession session = request.getSession();
 
 		String name = request.getParameter("name");
