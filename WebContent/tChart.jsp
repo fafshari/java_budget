@@ -16,16 +16,17 @@
 </table>
 
 <table align="center">
-	<tr><td><h1>T-Chart</h1></td></tr>
+	<tr><td><h1>Transaction History</h1></td></tr>
 </table>
 
 <table align="center">
 	<tr>
-		<td align="center" width="200px"><b><u><font size="5">Debit</font></u></b></td>
-		<td align="center" width="200px"><b><u><font size="5">Credit</font></u></b></td>
-		<td align="center" width="200px"><b><u><font size="5">Description</font></u></b></td>
-		<td align="center" width="200px"><b><u><font size="5">Date</font></u></b></td>
+		<td align="center" width="200px"><b><font size="4">Debit</font></b></td>
+		<td align="center" width="200px"><b><font size="4">Credit</font></b></td>
+		<td align="center" width="200px"><b><font size="4">Description</font></b></td>
+		<td align="center" width="200px"><b><font size="4">Date</font></b></td>
 	</tr>
+	<tr><td colspan="4"><hr size="1"/></td></tr>
 	
 	
 	
