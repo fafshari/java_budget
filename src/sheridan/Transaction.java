@@ -6,6 +6,11 @@ public class Transaction {
 	private boolean mIsCredit;
 	private String mDescription;
 
+	public Transaction(){
+		mAmount = 0;
+		mIsCredit = false;
+		mDescription = "";
+	}
 	public Transaction(float amount, boolean isCredit, String description) {
 		mAmount = amount;
 		mIsCredit = isCredit;
