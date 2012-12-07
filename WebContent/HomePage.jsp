@@ -16,6 +16,16 @@
 	<td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td>
 </tr>
 </table>
+<form id="totalCash" action="#">
+<table cellspacing="5" align="center">
+<tr><td>Total Cash: </td><td></td><td><input id="totalCash" type="text"  /></td></tr>
+<tr><td><input type="radio" name="dORc" value="debit"/>Debit</td> <td></td> <td>Amount ($): &nbsp;<input id="amount" type="text" /></td></tr>
+<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td> <td></td> <td>Description: &nbsp;<input id="desc" type="text" /></td></tr>
+<tr><td><input type="submit" value="Submit" /></td><td></td><td> <input type="reset" value="Reset"/></td></tr>
+</table>
+</form>
+
+
 
 
 

@@ -1,7 +1,6 @@
 body 
 {
-	background-image: url("images/backgroundTexure.png");
+	background-image: url("../images/backgroundTexture.png");
 	background-position: center;
 	background-repeat: repeat;
-	background-color: fuchsia;	
 }
