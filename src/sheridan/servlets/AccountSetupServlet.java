@@ -57,12 +57,13 @@ public class AccountSetupServlet extends HttpServlet {
 			user.setTotalCash(totalCash);
 		} catch (NumberFormatException e) {
 
-			session.setAttribute("totalCashError", "Please enter a valid cash total amount!");
+			session.setAttribute("totalCashError",
+					"Please enter a valid cash total amount!");
 			hasError = true;
 		} catch (NullPointerException e) {
 
 			session.setAttribute("totalCashError",
-					"please enter the unit price");
+					"Please enter a valid cash total amount!");
 			hasError = true;
 		}
 

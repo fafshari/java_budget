@@ -116,7 +116,7 @@ public class SubmitTransactionServlet extends HttpServlet {
 			 * because there could possibly be more errors in other fields
 			 */
 			// not an int
-			session.setAttribute("amountError", "unit price is not a number");
+			session.setAttribute("amountError", "please enter the quantity");
 			hasError = true;
 		} catch (NullPointerException e) {
 			/*
@@ -126,7 +126,7 @@ public class SubmitTransactionServlet extends HttpServlet {
 			 * because there could possibly be more errors in other fields
 			 */
 			// string was null
-			session.setAttribute("amountError", "please enter the unit price");
+			session.setAttribute("amountError", "please enter the quantity");
 			hasError = true;
 		}
 
