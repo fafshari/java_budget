@@ -57,7 +57,7 @@ public class AccountSetupServlet extends HttpServlet {
 			user.setTotalCash(totalCash);
 		} catch (NumberFormatException e) {
 
-			session.setAttribute("totalCashError", "unit price is not a number");
+			session.setAttribute("totalCashError", "Please enter a valid cash total amount!");
 			hasError = true;
 		} catch (NullPointerException e) {
 
@@ -70,7 +70,7 @@ public class AccountSetupServlet extends HttpServlet {
 			user.setName(name);
 			session.setAttribute("nameError", null);
 		} else {
-			session.setAttribute("nameError", "please enter the address");
+			session.setAttribute("nameError", "Please enter your full name!");
 			user.setName("");
 			hasError = true;
 		}
@@ -79,7 +79,7 @@ public class AccountSetupServlet extends HttpServlet {
 			user.setEmail(email);
 			session.setAttribute("emailError", null);
 		} else {
-			session.setAttribute("emailError", "please enter the shipment date");
+			session.setAttribute("emailError", "Please enter your E-Mail!");
 			user.setEmail("");
 			hasError = true;
 		}
