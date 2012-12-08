@@ -1,20 +1,25 @@
 package sheridan;
 
+import java.util.Date;
+
 public class Transaction {
 
 	private float mAmount;
 	private boolean mIsCredit;
 	private String mDescription;
+	private Date mDate;
 
 	public Transaction(){
 		mAmount = 0;
 		mIsCredit = false;
 		mDescription = "";
+		mDate = null;
 	}
-	public Transaction(float amount, boolean isCredit, String description) {
+	public Transaction(float amount, boolean isCredit, String description, Date date) {
 		mAmount = amount;
 		mIsCredit = isCredit;
 		mDescription = description;
+		mDate = date;
 	}
 
 	public float getAmount() {

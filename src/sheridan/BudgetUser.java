@@ -1,13 +1,10 @@
 package sheridan;
 
-import java.util.Date;
-
 public class BudgetUser {
 
 	String mName;
 	String mEmail;
 	double mtotalCash;
-	Date mDate;
 
 	public BudgetUser(String name, String email, double totalCash) {
 		mName = name;
@@ -19,6 +16,7 @@ public class BudgetUser {
 		mName = "";
 		mEmail = "";
 		mtotalCash = 0;
+		
 	}
 
 	public String getName() {
@@ -43,10 +41,6 @@ public class BudgetUser {
 
 	public void setTotalCash(double totalCash) {
 		this.mtotalCash = totalCash;
-	}
-
-	public void setDate(Date date) {
-		this.mDate = date;
 	}
 
 }
