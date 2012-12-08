@@ -28,7 +28,37 @@
 	<tr><td><b>Total Cash: </b></td><td>${user.totalCash}</td></tr>
 	<tr><td></br></td></tr>
 	<tr><td><input type="radio" name="dORc" value="debit" checked="checked"/>Debit</td>  <td>Amount ($): &nbsp;<input name="amount" type="text" />${amountError}</td></tr>
-	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input name="description" type="text" />${descriptionError}</td></tr>
+	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;
+	<script language="javascript" type="text/javascript">
+     function DropDownTextToBox(objDropdown, strTextboxId) {
+        document.getElementById(strTextboxId).value = objDropdown.options[objDropdown.selectedIndex].value;
+        DropDownIndexClear(objDropdown.id);
+        document.getElementById(strTextboxId).focus();
+    }
+    function DropDownIndexClear(strDropdownId) {
+        if (document.getElementById(strDropdownId) != null) {
+            document.getElementById(strDropdownId).selectedIndex = -1;
+        }
+    }
+</script>
+    <input name="description" type="text" id="description"
+        onchange="DropDownIndexClear('descriptionDropdown');" />
+
+    <select name="descriptionDropdown" id="descriptionDropdown"
+        onchange="DropDownTextToBox(this,'description');">
+        <option value="" title=""></option>
+        <option value="Food" title="Title for Item 1">Food</option>
+        <option value="Rent" title="Title for Item 2">Rent</option>
+        <option value="Car" title="Title for Item 3">Car</option>
+        <option value="Income" title="Title for Item 3">Income</option>
+        
+    </select>
+    <script language="javascript" type="text/javascript">
+        //Since the first <option> will be preselected the IndexClear function must fire once to clear that out.
+        DropDownIndexClear("descriptionDropdown");
+    </script>
+${descriptionError}</td></tr>
+
 </table>
 
 <table align="center">
