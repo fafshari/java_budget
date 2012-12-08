@@ -16,6 +16,7 @@
 
 <table align="center">
 	<tr><td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td></tr>
+	<tr><td><a href="SystemPage.jsp">Go to Transaction Page</a></td></tr>
 </table>
 
 <table align="center">
