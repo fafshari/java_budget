@@ -51,7 +51,7 @@
 		</c:choose></td>
 		
 		<td align="center" width="200px">${transaction.description}</td>
-		<td align="center" width="200px">${date}</td>
+		<td align="center" width="200px">${transaction.date}</td>
 	</tr>
 	</c:forEach>
 	<tr><td colspan="4"><hr size="1"/></td></tr>
