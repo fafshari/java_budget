@@ -1,7 +1,6 @@
 package sheridan.servlets;
 
 import java.io.IOException;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -84,8 +83,6 @@ public class AccountSetupServlet extends HttpServlet {
 			user.setEmail("");
 			hasError = true;
 		}
-
-		user.setDate(new Date());
 
 		session.setAttribute("user", user);
 
