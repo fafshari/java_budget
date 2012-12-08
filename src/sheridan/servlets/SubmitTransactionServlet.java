@@ -142,9 +142,9 @@ public class SubmitTransactionServlet extends HttpServlet {
 
 		if (amount > 0) {
 			t.setAmount(amount);
-			session.setAttribute("quantityError", null);
+			session.setAttribute("amountError", null);
 		} else {
-			session.setAttribute("quantityError", "please enter the quantity");
+			session.setAttribute("amountError", "please enter the quantity");
 			t.setAmount(0);
 			hasError = true;
 		}
