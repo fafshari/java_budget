@@ -13,13 +13,13 @@ public class Transaction {
 		mAmount = 0;
 		mIsCredit = false;
 		mDescription = "";
-		mDate = null;
+		mDate = new Date();
 	}
 	public Transaction(float amount, boolean isCredit, String description, Date date) {
 		mAmount = amount;
 		mIsCredit = isCredit;
 		mDescription = description;
-		mDate = date;
+		mDate = new Date();
 	}
 
 	public float getAmount() {

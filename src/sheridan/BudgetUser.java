@@ -4,12 +4,16 @@ public class BudgetUser {
 
 	String mName;
 	String mEmail;
-	double mtotalCash;
+	float mtotalCash;
+	float mTotalCredit;
+	float mTotalDebit;
 
-	public BudgetUser(String name, String email, double totalCash) {
+	public BudgetUser(String name, String email, float totalCash, float totalCredit, float totalDebit) {
 		mName = name;
 		mEmail = email;
 		mtotalCash = totalCash;
+		mTotalCredit = totalCredit;
+		mTotalDebit = totalDebit;
 	}
 
 	public BudgetUser() {
@@ -39,8 +43,24 @@ public class BudgetUser {
 		this.mEmail = mEmail;
 	}
 
-	public void setTotalCash(double totalCash) {
+	public void setTotalCash(float totalCash) {
 		this.mtotalCash = totalCash;
+	}
+
+	public float getmTotalCredit() {
+		return mTotalCredit;
+	}
+
+	public float getmTotalDebit() {
+		return mTotalDebit;
+	}
+
+	public void setmTotalCredit(float mTotalCredit) {
+		this.mTotalCredit = mTotalCredit;
+	}
+
+	public void setmTotalDebit(float mTotalDebit) {
+		this.mTotalDebit = mTotalDebit;
 	}
 
 }
