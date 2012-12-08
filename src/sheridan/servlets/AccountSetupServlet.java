@@ -88,7 +88,7 @@ public class AccountSetupServlet extends HttpServlet {
 		session.setAttribute("user", user);
 
 		if (hasError) {
-			response.sendRedirect("HomePage.jsp");
+			response.sendRedirect("index.jsp");
 
 			return;
 		}

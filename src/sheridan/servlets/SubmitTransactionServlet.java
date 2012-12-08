@@ -194,6 +194,6 @@ public class SubmitTransactionServlet extends HttpServlet {
 		// .getRequestDispatcher("invoiceBinder.jsp");
 		// rd.forward(request, response);
 
-		response.sendRedirect("TChart.jsp");
+		response.sendRedirect("tChart.jsp");
 	}
 }
