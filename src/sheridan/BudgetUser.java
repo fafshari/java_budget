@@ -31,7 +31,7 @@ public class BudgetUser {
 		return mEmail;
 	}
 
-	public double getTotalCash() {
+	public float getTotalCash() {
 		return mtotalCash;
 	}
 
@@ -47,19 +47,19 @@ public class BudgetUser {
 		this.mtotalCash = totalCash;
 	}
 
-	public float getmTotalCredit() {
+	public float getTotalCredit() {
 		return mTotalCredit;
 	}
 
-	public float getmTotalDebit() {
+	public float getTotalDebit() {
 		return mTotalDebit;
 	}
 
-	public void setmTotalCredit(float mTotalCredit) {
+	public void setTotalCredit(float mTotalCredit) {
 		this.mTotalCredit = mTotalCredit;
 	}
 
-	public void setmTotalDebit(float mTotalDebit) {
+	public void setTotalDebit(float mTotalDebit) {
 		this.mTotalDebit = mTotalDebit;
 	}
 
