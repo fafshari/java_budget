@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import sheridan.BudgetUser;
 import sheridan.Transaction;
 
 /**
@@ -161,6 +162,17 @@ public class SubmitTransactionServlet extends HttpServlet {
 			return;
 		}
 
+		BudgetUser user = (BudgetUser) session.getAttribute("user");
+
+		String bool = request.getParameter("dORc");
+		if ("credit".equals(bool)) {
+			user.setCredit(user.getCredit() + amount);
+			user.setTotalCash(user.getTotalCash() - amount);
+		} else {
+			user.setDebit(user.getDebit() + amount);
+			user.setTotalCash(user.getTotalCash() + amount);
+		}
+
 		/*
 		 * If addInvoice was not set to false above, that means the
 		 * invoiceNumber was not found in the list, meaning it is a new invoice.
@@ -182,5 +194,4 @@ public class SubmitTransactionServlet extends HttpServlet {
 
 		response.sendRedirect("TChart.jsp");
 	}
-
 }
