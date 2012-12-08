@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -22,9 +23,9 @@
 
 <table align="center">
 <tr><td><h1>Account Setup</h1></td></tr>
-<tr><td>Name: </td><td> <input type="text"/>${nameError}</td></tr>
-<tr><td>Total Available Cash: </td><td><input id="totalCash" type="text"/>${totalCashError}</td> </tr>
-<tr><td>Email:</td> <td><input id="email" type="text"/>${emailError}</td></tr>
+<tr><td>Name: </td><td> <input name="name" type="text"/>${nameError}</td></tr>
+<tr><td>Total Available Cash: </td><td><input name="totalCash" id="totalCash" type="text"/>${totalCashError}</td> </tr>
+<tr><td>Email:</td> <td><input name="email" id="email" type="text"/>${emailError}</td></tr>
 </table>
 
 <table align="center">

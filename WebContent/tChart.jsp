@@ -35,7 +35,7 @@
 	<tr>
 		<td align="center" width="200px">
 		<c:choose>
-				<c:when test="${transaction.isIsCredit == false}">
+				<c:when test="${transaction.isCredit == false}">
 				${transaction.amount}
 			</c:when>
 			<c:otherwise>-</c:otherwise>
@@ -43,19 +43,24 @@
 		
 		
 		<td align="center" width="200px"><c:choose>
-				<c:when test="${transaction.isIsCredit == true}">
+				<c:when test="${transaction.isCredit == true}">
 				${transaction.amount}
 			</c:when>
 			<c:otherwise>-</c:otherwise>
 		</c:choose></td>
 		
-		<td align="center" width="200px">${description}</td>
+		<td align="center" width="200px">${transaction.description}</td>
 		<td align="center" width="200px">${date}</td>
 	</tr>
-	
 	</c:forEach>
-	
-	
+	<tr><td colspan="4"><hr size="1"/></td></tr>
+		
+	<tr>
+		<td align="center" width="200px"><b>${user.totalDebit}</b></td>
+		<td align="center" width="200px"><b>${user.totalCredit}</b></td>
+		<td align="center" width="200px"><b>New Total:</b></td>
+		<td align="center" width="200px"><b>${user.totalCash}</b></td>
+	</tr>	
 </table>
 
 

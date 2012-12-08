@@ -23,11 +23,11 @@
 
 <table align="center">
 	<tr><td><h1>Transaction</h1></td></tr>
-	<tr><td><b>Name: </b></td><td><label id="usersName"></label></td></tr>
-	<tr><td><b>Total Cash: </b></td><td><label id="totalCash"></label></td></tr>
+	<tr><td><b>Name: </b></td><td>${user.name}</td></tr>
+	<tr><td><b>Total Cash: </b></td><td>${user.totalCash}</td></tr>
 	<tr><td></br></td></tr>
-	<tr><td><input type="radio" name="dORc" value="debit" checked="checked"/>Debit</td>  <td>Amount ($): &nbsp;<input id="amount" type="text" />${amountError}</td></tr>
-	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input id="desc" type="text" />${descriptionError}</td></tr>
+	<tr><td><input type="radio" name="dORc" value="debit" checked="checked"/>Debit</td>  <td>Amount ($): &nbsp;<input name="amount" type="text" />${amountError}</td></tr>
+	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input name="description" type="text" />${descriptionError}</td></tr>
 </table>
 
 <table align="center">
