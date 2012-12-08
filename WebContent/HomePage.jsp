@@ -17,13 +17,14 @@
 	<td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td>
 </tr>
 </table>
+
 <form id="accountSetup" action="AccountSetupServlet" method="post">
 
 <table align="center">
 <tr><td><h1>Account Setup</h1></td></tr>
-<tr><td>Name: </td><td> <input type="text"/>error</td></tr>
-<tr><td>Total Available Cash: </td><td><input id="totalCash" type="text"/>error</td> </tr>
-<tr><td>Email:</td> <td><input id="email" type="text"/>error</td></tr>
+<tr><td>Name: </td><td> <input type="text"/>${nameError}</td></tr>
+<tr><td>Total Available Cash: </td><td><input id="totalCash" type="text"/>${totalCashError}</td> </tr>
+<tr><td>Email:</td> <td><input id="email" type="text"/>${emailError}</td></tr>
 </table>
 
 <table align="center">
