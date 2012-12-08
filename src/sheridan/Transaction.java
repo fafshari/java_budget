@@ -9,17 +9,23 @@ public class Transaction {
 	private String mDescription;
 	private Date mDate;
 
-	public Transaction(){
+	public Transaction() {
 		mAmount = 0;
 		mIsCredit = false;
 		mDescription = "";
 		mDate = new Date();
 	}
-	public Transaction(float amount, boolean isCredit, String description, Date date) {
+
+	public Transaction(float amount, boolean isCredit, String description,
+			Date date) {
 		mAmount = amount;
 		mIsCredit = isCredit;
 		mDescription = description;
 		mDate = new Date();
+	}
+
+	public Date getDate() {
+		return mDate;
 	}
 
 	public float getAmount() {
@@ -45,5 +51,5 @@ public class Transaction {
 	public void setDescription(String mDescription) {
 		this.mDescription = mDescription;
 	}
-	
+
 }
