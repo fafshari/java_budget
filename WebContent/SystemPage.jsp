@@ -50,7 +50,14 @@
         <option value="Food" title="Title for Item 1">Food</option>
         <option value="Rent" title="Title for Item 2">Rent</option>
         <option value="Car" title="Title for Item 3">Car</option>
+        <option value="Phone" title="Title for Item 3">Phone</option>
+        <option value="Internet" title="Title for Item 3">Internet</option>
+        <option value="School Fees" title="Title for Item 3">School Fees</option>
+        <option value="Clothing" title="Title for Item 3">Clothing</option>
+        <option value="Personal Expense" title="Title for Item 3">Personal Expense</option>
         <option value="Income" title="Title for Item 3">Income</option>
+        <option value="Credit Card" title="Title for Item 3">Credit Card</option>
+        <option value="Transportation" title="Title for Item 3">Transportation</option>
         
     </select>
     <script language="javascript" type="text/javascript">
