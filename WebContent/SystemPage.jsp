@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="sheridan.*"%>
+    pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,15 +19,15 @@
 </table>
 
 <form id="submitTransaction" action="SubmitTransactionServlet" method="post">
-<jsp:useBean id="selectedTransaction" class="sheridan.Transaction" scope="session"></jsp:useBean>
+
 
 <table align="center">
 	<tr><td><h1>Transaction</h1></td></tr>
 	<tr><td><b>Name: </b></td><td><label id="usersName"></label></td></tr>
 	<tr><td><b>Total Cash: </b></td><td><label id="totalCash"></label></td></tr>
 	<tr><td></br></td></tr>
-	<tr><td><input type="radio" name="dORc" value="debit" checked="checked"/>Debit</td>  <td>Amount ($): &nbsp;<input id="amount" type="text" />error</td></tr>
-	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input id="desc" type="text" />error</td></tr>
+	<tr><td><input type="radio" name="dORc" value="debit" checked="checked"/>Debit</td>  <td>Amount ($): &nbsp;<input id="amount" type="text" />${amountError}</td></tr>
+	<tr><td><input type="radio" name="dORc" value="credit"/>Credit</td>  <td>Description: &nbsp;<input id="desc" type="text" />${descriptionError}</td></tr>
 </table>
 
 <table align="center">
