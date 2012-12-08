@@ -166,10 +166,10 @@ public class SubmitTransactionServlet extends HttpServlet {
 
 		String bool = request.getParameter("dORc");
 		if ("credit".equals(bool)) {
-			user.setCredit(user.getCredit() + amount);
+			user.setTotalCredit(user.getTotalCredit() + amount);
 			user.setTotalCash(user.getTotalCash() - amount);
 		} else {
-			user.setDebit(user.getDebit() + amount);
+			user.setTotalDebit(user.getTotalDebit() + amount);
 			user.setTotalCash(user.getTotalCash() + amount);
 		}
 
