@@ -16,7 +16,7 @@
 
 <table align="center">
 	<tr><td align="center"><img src="images/LogoPBT.png" alt="logo" align="top" height="126" width="650"/><hr size="2" noshade="noshade" style=""/></td></tr>
-	<tr><td><a href="TChart.jsp">Go to T-Chart</a></td></tr>
+	<tr><td><a href="tChart.jsp">Go to T-Chart</a></td></tr>
 </table>
 
 <form id="submitTransaction" action="SubmitTransactionServlet" method="post">
